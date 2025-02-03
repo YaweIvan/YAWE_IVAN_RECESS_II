@@ -1,7 +1,8 @@
 -# 👋 Hello, world! I'm Yawe Ivan  
 
 👀 **I’m interested in:**  
-- Software Development 🚀  
+- Software Development 🚀
+- mobile application development(android) 
 - Data Structures & Algorithms 📊  
 - Web Development (Laravel, PHP, and JavaScript) 🌐  
 - Competitive Programming 💻  
