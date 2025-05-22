@@ -1,104 +1,104 @@
-# # Condition Statements
-# age = 18
-# if age >= 18:
-#     print("You are an adult.")
-# elif age >= 13:
-#     print("You are a teenager.")
-# else:
-#     print("You are a child.")
+# Condition Statements
+age = 18
+if age >= 18:
+    print("You are an adult.")
+elif age >= 13:
+    print("You are a teenager.")
+else:
+    print("You are a child.")
 
-# print()  # just for spacing
+print()  # just for spacing
 
-# # Passmark Exercise
-# passmark = 50
+# Passmark Exercise
+passmark = 50
 
-# if passmark < 50:
-#     print("Retake")
-# elif passmark >= 50 and passmark < 80:
-#     print("Passed")
-# else:
-#     print("Excellent")
+if passmark < 50:
+    print("Retake")
+elif passmark >= 50 and passmark < 80:
+    print("Passed")
+else:
+    print("Excellent")
+
+print()  # spacing
+
+# Nested If
+age = int(input("Enter your age: "))
+
+if age >= 18:
+    print("You are an adult.")
+    has_ticket = input("Do you have a valid ticket? (yes/no): ")
+    if has_ticket.lower() == "yes":
+        print("You can watch the movie.")
+    else:
+        print("You cannot watch the movie without a ticket.")
+else:
+    print("You are not allowed to watch the movie because you are underage.")
+
+print()  # spacing
+
+# Loop: Print numbers 0 to 4
+for i in range(5):
+    print(i)
+
+print()  # spacing
+
+# Loop to enter car names
+cars = []
+for i in range(5):
+    car = input(f"Enter name of car {i + 1}: ")
+    cars.append(car)
+
+print("\nList of cars entered:")
+for car in cars:
+    print(car)
 
 # print()  # spacing
 
-# # Nested If
-# age = int(input("Enter your age: "))
+# Loop through predefined list of cars
+cars = ['Ipsum', 'Probox', 'Sienta', 'Pickup']
+print("Predefined list of cars:")
+for car in cars:
+    print(car)
 
-# if age >= 18:
-#     print("You are an adult.")
-#     has_ticket = input("Do you have a valid ticket? (yes/no): ")
-#     if has_ticket.lower() == "yes":
-#         print("You can watch the movie.")
-#     else:
-#         print("You cannot watch the movie without a ticket.")
-# else:
-#     print("You are not allowed to watch the movie because you are underage.")
+# using while loop
+count=1
+while count >=5:
+    print(count)
 
-# print()  # spacing
-
-# # Loop: Print numbers 0 to 4
-# for i in range(5):
-#     print(i)
-
-# print()  # spacing
-
-# # # Loop to enter car names
-# # cars = []
-# # for i in range(5):
-# #     car = input(f"Enter name of car {i + 1}: ")
-# #     cars.append(car)
-
-# # print("\nList of cars entered:")
-# # for car in cars:
-# #     print(car)
-
-# # print()  # spacing
-
-# # Loop through predefined list of cars
-# cars = ['Ipsum', 'Probox', 'Sienta', 'Pickup']
-# print("Predefined list of cars:")
-# for car in cars:
-#     print(car)
-
-# #using while loop
-# # count=1
-# # while count >=5:
-# #     print(count)
-
-# #breakstatemt
-# count=1
-# while count <= 5:
-#     if count == 4:
-#         break
-#     print(count)
-#     count+=1
+#breakstatemt
+count=1
+while count <= 5:
+    if count == 4:
+        break
+    print(count)
+    count+=1
     
 
-# #continue statement 
-# i =0
-# while i<5:
-#     i+=1
-#     if i ==3:
-#         continue
-#     print(i)
+#continue statement 
+i =0
+while i<5:
+    i+=1
+    if i ==3:
+        continue
+    print(i)
 
-# #example
-# num = 6
-# attempts = 0
-# max_attempts = 5
+#example
+num = 6
+attempts = 0
+max_attempts = 5
 
-# while attempts < max_attempts:
-#     input_num = int(input(f"Guess a number between 1 to 10 (Attempt {attempts + 1}/{max_attempts}): "))
-#     attempts += 1
+while attempts < max_attempts:
+    input_num = int(input(f"Guess a number between 1 to 10 (Attempt {attempts + 1}/{max_attempts}): "))
+    attempts += 1
 
-#     if input_num == num:
-#         print(f"Guessed right! It's indeed {num}! You won in {attempts} attempt(s).")
-#         break
-#     else:
-#         if attempts < max_attempts:
-#             print(f"Incorrect! Try again. You have {max_attempts - attempts} attempt(s) left.")
-#         else:
-#             print(f"Sorry, you didn't guess it. The correct number was {num}. Better luck next time!")
+    if input_num == num:
+        print(f"Guessed right! It's indeed {num}! You won in {attempts} attempt(s).")
+        break
+    else:
+        if attempts < max_attempts:
+            print(f"Incorrect! Try again. You have {max_attempts - attempts} attempt(s) left.")
+        else:
+            print(f"Sorry, you didn't guess it. The correct number was {num}. Better luck next time!")
 
 
 #comprehensions
