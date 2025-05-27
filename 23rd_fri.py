@@ -72,6 +72,27 @@ finally:
     print("run completed")
     
 ##raise a custom exception that checks for positive number
+#soln on a custom error 
+
+class NotPositiveError(Exception):
+    pass
+#function to check if number is positive
+def check_positive(number):
+    if number <= 0:
+        raise NotPositiveError("Not positive number")
+    else:
+        print("Nice shit..its a positive number")
+#usage..in example
+#we use try......except
+try:
+    num = int(input("Enter a positive number😊: "))
+    check_positive(num)
+except NotPositiveError as e:
+    print("custom error:", e)
+except ValueError:
+    print("please enter a valid number😒")
+            
+
 
 ##Ass2
 #write a program to handle errors, the program to ask for two numbers using input and then 
